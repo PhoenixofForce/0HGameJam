@@ -1,5 +1,7 @@
 package frame;
 
+import game.Game;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -10,7 +12,7 @@ public class InputHandler implements KeyListener {
 
 	private Map<Integer, Boolean> pressedKeys;
 
-	public InputHandler() {
+	public InputHandler(Game game) {
 		pressedKeys = new HashMap<>();
 	}
 
@@ -21,6 +23,8 @@ public class InputHandler implements KeyListener {
 
 	@Override
 	public void keyPressed(KeyEvent e) {
+
+		System.out.print(e.getKeyCode());
 		pressedKeys.put(e.getKeyCode(), true);
 	}
 

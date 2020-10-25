@@ -19,6 +19,7 @@ public class Window extends JFrame  {
 	public Window() {
 		this.setResizable(false);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setTitle("POF - Space Invaders");
 
 		this.setVisible(true);
 		Insets i = this.getInsets();
